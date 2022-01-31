@@ -5,11 +5,11 @@ from random import randint
 # print(bin(number))
 
 
-def decimal_of_binarypy(number):
+def decimal_of_binary(number):
     result = []
     while number:
         result.append(number % 2)
         number = number // 2
     result.reverse()
     return result
-print(decimal_of_binarypy(13))
+print(decimal_of_binary(13))
