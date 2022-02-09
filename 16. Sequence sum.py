@@ -1,8 +1,11 @@
-# 16. Задать список из n чисел последовательности  и вывести на экран их сумму
+# 16. Задать список из n чисел последовательности (1+1n)n и вывести на экран их сумму
 
-from random import randint
+n = int(input('Enter number: '))
 
-my_list = [randint(1, 10) for i in range(10)]
-print(my_list)
-# print(sum(my_list))
+def get_list(n):
+    result = [round((1 + 1 / i)**i, 4) for i in range(1, n + 1)]
+    return result
 
+numbers = get_list(n)
+print(numbers)
+print(round(sum(numbers)))
