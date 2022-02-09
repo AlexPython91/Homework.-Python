@@ -1,14 +1,14 @@
 # 31. Составить список простых множителей натурального числа N
 
-def task31 (n):
+def make_a_list(n):
     i = 2
-    array = []
+    new_list = []
     while n != 1: 
         if n % i == 0:
-            array.append(i) #3
+            new_list.append(i) 
             n = n / i
             i = 2
         else: 
             i += 1
-    return (array)
-print (task31 (100))
+    return (new_list)
+print (make_a_list(100))
