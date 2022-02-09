@@ -1,17 +1,11 @@
 # 20. Определить, присутствует ли в заданном списке строк, некоторое число 
 
-# from curses.ascii import isdigit
-
-
-list = ['qwe', 'qwer', '3', 'qwert', '16', 'qwerty']
-# list = ['qwe', 'qwer', 'qwert', 'qwerty']
-print(list)
-
-def find_num_in_string(numbers):
-    num = ''
-    for elem in numbers:
-        if elem.isdigit():
-            num = num + elem
-            return num
-    
-print(find_num_in_string(list))
+def find_number(n):
+    string1 = ['jh', 'sdhfogf', 'kjahsd', '24', 'dpo', '7']
+    N = str(n)
+    for i in range(len(string1)):
+        if N in string1:
+            return True
+        else:
+            return False
+print(find_number(24))
